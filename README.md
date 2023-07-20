@@ -4,6 +4,10 @@
 
 This Hello World app is from the quick start tutorial on the Electron [website](https://www.electronjs.org/docs/latest/tutorial/quick-start).
 
+To install dependencies, from the project root directory:
+```angular2html
+npm install
+```
 
 To run the application on your computer, after installing dependencies,
 ```angular2html
