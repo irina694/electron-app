@@ -38,16 +38,17 @@ The `out` folder is not added to GitHub.
 
 #### GitHub publishing/releases
 
-To publish a release of the application to the public GitHub repo, make sure you have a GITHUB_TOKEN variable temporarily or permanently in your environment. 
+To publish a release of the application to the public GitHub repo, make sure you have a GITHUB_TOKEN variable temporarily or permanently in your environment. The GitHub token is created in the GitHub user Developer Settings webpage, as Personal access token (classic) with the `public_repo` scope.
 
-To add a token (created in the GitHub user developer settings), On MacOS run:
+To add the token to the current terminal session, On MacOS run:
 ```angular2html
 export GITHUB_TOKEN=...
 ```
-where `...` is the actual token value, saved privately on your computer.
+where `...` is the actual token value, saved privately on your computer or the `.env` file (not on GitHub).
 
 Then, run the publishing command:
 ```angular2html
 npm run publish --auth_token=${GITHUB_TOKEN}
 ```
+
 This command will run configured makers and publish the output distributables to a new GitHub release. By default, the release is in the draft stage and can manually be moved to production in the GitHub repo website via the Releases page.
