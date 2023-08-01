@@ -4,4 +4,4 @@
  */
 
 alert("Hello World!!!")
-console.log("Hi")
+console.log("Hi, hello")
