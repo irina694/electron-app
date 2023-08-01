@@ -35,6 +35,7 @@ module.exports = {
           owner: 'github-user-name',
           name: 'github-repo-name'
         },
+        authToken: process.env.GITHUB_TOKEN,
         prerelease: false,
         draft: true
       }
